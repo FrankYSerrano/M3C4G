@@ -1,4 +1,4 @@
-from Clases.condominio import Condominio
+from Clases.condominio import condominio
 from Clases.cla import Guardia
 from Clases.cla import UnidadHabitacional
 from Clases.cla import CuentaCorriente
