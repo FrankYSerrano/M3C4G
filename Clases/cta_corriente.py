@@ -4,9 +4,9 @@ class CuentaCorriente:
     def __init__ (self, estado_cuenta, saldo, giro):
         self.estado_cuenta = estado_cuenta
         self.saldo = saldo
-        self.giro = giro
+        self.__giro__ = giro
 
-        print("Cree instancia de clase CuentaCorriente")
+        print("Cree instancia de clase CuentaCorriente ", self.estado_cuenta)
 
    # Definicion de metodo 1
     def girar(self):

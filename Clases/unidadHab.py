@@ -6,7 +6,7 @@ class UnidadHabitacional:
         self.ventanas = ventanas
         self.techo = techo
 
-        print("Cree instancia de clase UnidadHabitacional")
+        print("Cree instancia de clase UnidadHabitacional ", self.techo)
 
    # Definicion de metodo 1
     def abrir_puerta(self):

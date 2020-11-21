@@ -7,11 +7,11 @@ admins_B = ['Guido', 'Cristian', 'Fernando']
 #Creacion de Guardias. SERIA IDEAL UNA CLASE HERRAMIENTAS CON uuid UNICO
 herram_basicas = ['Llaves', 'Linterna', 'Llave para ascensor']
 herram_avanzadas = ['Pistola', 'Chaleco', 'Impermeable', 'Llaves', 'Linterna', 'Llave para ascensor']
-Guard01 = C.Guardia("Azul", herram_basicas, "Flaco")
-Guard02 = C.Guardia("Verde", herram_avanzadas, "Corpulento")
-Guard03 = C.Guardia("Azul", herram_basicas, "Flaco")
-Guard04 = C.Guardia("Verde", herram_avanzadas, "Gordo")
-Guard05 = C.Guardia("Rojo", herram_avanzadas, "Schwarzenegger")
+Guard01 = C.Guardia("Azul", herram_basicas, "Bruce Lee")
+Guard02 = C.Guardia("Verde", herram_avanzadas, "Chuck Norris")
+Guard03 = C.Guardia("Azul", herram_basicas, "Justin Bieber")
+Guard04 = C.Guardia("Verde", herram_avanzadas, "Jean Claude Vandamme")
+Guard05 = C.Guardia("Rojo", herram_avanzadas, "Arnold Schwarzenegger")
 
 #Creacion de Listas de Guardias
 guardias_A = [Guard01, Guard02, Guard03, Guard04, Guard05]
@@ -45,5 +45,25 @@ conj2 = C.CondominioHorizontal(2, 1, 10, 0, 0, "DirConj2", admins_B, guardias_B,
 #print(conj1.num_unidades_habitacionales)
 #print(conj2.num_unidades_habitacionales)
 
+#Creacion de Terrenos 
+terreno3 = C.Terreno (80, "limo gredoso", 2, "ciruelos, castaños, pinos", "artificial", "rala")
+terreno4 = C.Terreno (80, "limo gredoso", 1, "platanos orientales, pinos", "artificial", "multiple")
+
 #Creacion de conjuntos de edificios.
+edifi1 = C.CondominioVertical(10, 2, 2, 2, "crema","la petunias 456",admins_A, guardias_A, 50, L_Casas_1, cc1, terreno3)
+edifi2 = C.CondominioVertical(10, 2, 2, 1, "celeste", "los aromos 336", admins_B, guardias_B, 40, L_Casas_2, cc2, terreno4)
+
+#prueba de acceso de metodo encapsulado
+#print(edifi1.lista_guardias)
+edifi1.__listar_guardias__()
+edifi1.del_guardia(Guard03)
+edifi1.__listar_guardias__()
+edifi1.add_guardia(Guard03)
+edifi1.__listar_guardias__()
+
+#comprobacion de acceso atributo encapsulado desde programa principal
+print("comprobacion de acceso atributo encapsulado desde programa principal ", cc1.__giro__)
+
+#comprobacion de acceso atributo encapsulado
+conj2.limpiar_plaza()
 
