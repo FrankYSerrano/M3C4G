@@ -3,13 +3,13 @@ from .terreno import Terreno
 
 class CondominioHorizontal (condominio, Terreno):
    # Definicion de contructor de inicializacion
-    def __init__ (self, arg1, arg2, arg3, arg4, arg5):
-        super().__init__(direccion, lista_administrador, lista_guardias, num_unidades_habitacionales, lista_unidades, cuenta_corriente)
-        self.plaza = arg1
-        self.piscina = arg2
-        self.estacionamiento = arg3
-        self.helipuerto = arg4
-        self.muelle = arg5
+    def __init__ (self, plaza, piscina, estacionamiento, helipuerto, muelle):
+#        super().__init__(direccion, lista_administrador, lista_guardias, num_unidades_habitacionales, lista_unidades, cuenta_corriente)
+        self.plaza = plaza
+        self.piscina = piscina
+        self.estacionamiento = estacionamiento
+        self.helipuerto = helipuerto
+        self.muelle = muelle
 
    # Definicion de metodo 1  POLIFORMICO!!!
     def construir_casa(self):

@@ -3,12 +3,12 @@ from .terreno import Terreno
 
 class CondominoVertical (condominio, Terreno):
    # Definicion de contructor de inicializacion
-    def __init__ (self, arg1, arg2, arg3, arg4, arg5):
-        self.num_de_pisos = arg1
-        self.num_de_ascensores = arg2
-        self.escaleras = arg3
-        self.entrada = arg4
-        self.color = arg5
+    def __init__ (self, num_de_pisos, num_de_ascensores, escaleras, entrada, color):
+        self.num_de_pisos = num_de_pisos
+        self.num_de_ascensores = num_de_ascensores
+        self.escaleras = escaleras
+        self.entrada = entrada
+        self.color = color
 
    # Definicion de metodo 1 POLIFORMICO!!!
     def construir_edificio(self):
