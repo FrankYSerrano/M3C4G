@@ -2,169 +2,169 @@
 class Guardia:
    # Definicion de contructor de inicializacion
     def __init__ (self, arg1, arg2, arg3):
-        self.a1 = arg1
-        self.a2 = arg2
+        self.Uniforme = arg1
+        self.Herramientas = arg2
         self.a3 = arg3
 
    # Definicion de metodo 1
-    def mGuardia_1(self):
+    def patrullaje(self):
         print("Clase Guardia - Metodo 1") 
 
    # Definicion de metodo 2
-    def mGuardia_2(self):
+    def saludo(self):
         print("Clase Guardia - Metodo 2") 
 
    # Definicion de metodo 3
-    def mGuardia_3(self):
+    def registro_visitas(self):
         print("Clase Guardia - Metodo 3") 
 
    # Definicion de metodo 4
-    def mGuardia_4(self):
+    def contar_chismes(self):
         print("Clase Guardia - Metodo 4") 
 
 class UnidadHabitacional:
    # Definicion de contructor de inicializacion
     def __init__ (self, arg1, arg2, arg3):
-        self.a1 = arg1
-        self.a2 = arg2
-        self.a3 = arg3
+        self.puerta = arg1
+        self.ventanas = arg2
+        self.techo = arg3
 
    # Definicion de metodo 1
-    def mUnidadHab_1(self):
+    def abrir_puerta(self):
         print("Clase UnidadHab1 - Metodo 1") 
 
    # Definicion de metodo 2
-    def mUnidadHab_2(self):
+    def abrir_llave_agua(self):
         print("Clase UnidadHab1 - Metodo 2") 
 
    # Definicion de metodo 3
-    def mUnidadHab_3(self):
+    def cerrar_puerta(self):
         print("Clase UnidadHab1 - Metodo 3") 
 
    # Definicion de metodo 4
-    def mUnidadHab_4(self):
+    def encender_luz(self):
         print("Clase UnidadHab1 - Metodo 4") 
 
 class CuentaCorriente:
    # Definicion de contructor de inicializacion
     def __init__ (self, arg1, arg2, arg3):
-        self.a1 = arg1
-        self.a2 = arg2
-        self.a3 = arg3
+        self.estado_cuenta = arg1
+        self.saldo = arg2
+        self.giro = arg3
 
    # Definicion de metodo 1
-    def mCtaCorr_1(self):
+    def girar(self):
         print("Clase CtaCorr - Metodo 1") 
 
    # Definicion de metodo 2
-    def mCtaCorr_2(self):
+    def abonar(self):
         print("Clase CtaCorr - Metodo 2") 
 
    # Definicion de metodo 3
-    def mCtaCorr_3(self):
+    def bloquear(self):
         print("Clase CtaCorr - Metodo 3") 
 
    # Definicion de metodo 4
-    def mCtaCorr_4(self):
+    def desbloquear(self):
         print("Clase CtaCorr - Metodo 4") 
 
 class Terreno:
    # Definicion de contructor de inicializacion
     def __init__ (self, arg1, arg2, arg3, arg4, arg5, arg6):
-        self.a1 = arg1
-        self.a2 = arg2
-        self.a3 = arg3
-        self.a3 = arg4
-        self.a3 = arg5
-        self.a3 = arg6
+        self.superficie = arg1
+        self.tierra = arg2
+        self.piedras = arg3
+        self.arboles = arg4
+        self.pasto = arg5
+        self.grama = arg6
 
    # Definicion de metodo 1
-    def mTerr_1(self):
+    def construir_casa(self):
         print("Clase Terreno - Metodo 1") 
 
    # Definicion de metodo 2
-    def mTerr_2(self):
+    def construir_edificio(self):
         print("Clase Terreno - Metodo 2") 
 
    # Definicion de metodo 3
-    def mTerr_3(self):
+    def construir_estacionamiento(self):
         print("Clase Terreno - Metodo 3") 
 
    # Definicion de metodo 4
-    def mTerr_4(self):
+    def construir_piscina(self):
         print("Clase Terreno - Metodo 4") 
 
    # Definicion de metodo 5
-    def mTerr_5(self):
+    def construir_plaza(self):
         print("Clase Terreno - Metodo 5") 
 
    # Definicion de metodo 6
-    def mTerr_6(self):
+    def construir_caseta(self):
         print("Clase Terreno - Metodo 6") 
 
 class CondominoVertical:
    # Definicion de contructor de inicializacion
     def __init__ (self, arg1, arg2, arg3, arg4, arg5):
-        self.a1 = arg1
-        self.a2 = arg2
-        self.a3 = arg3
-        self.a3 = arg4
-        self.a3 = arg5
+        self.num_de_pisos = arg1
+        self.num_de_ascensores = arg2
+        self.escaleras = arg3
+        self.entrada = arg4
+        self.color = arg5
 
-   # Definicion de metodo 1
-    def mCondVert_1(self):
+   # Definicion de metodo 1 POLIFORMICO!!!
+    def construir_edificio(self):
         print("Clase CondVert - Metodo 1") 
 
    # Definicion de metodo 2
-    def mCondVert_2(self):
+    def limpiar_piso(self):
         print("Clase CondVert - Metodo 2") 
 
    # Definicion de metodo 3
-    def mCondVert_3(self):
+    def limpiar_piscina(self):
         print("Clase CondVert - Metodo 3") 
 
    # Definicion de metodo 4
-    def mCondVert_4(self):
+    def limpiar_ascensor(self):
         print("Clase CondVert - Metodo 4") 
 
    # Definicion de metodo 5
-    def mCondVert_5(self):
+    def limpiar_escaleras(self):
         print("Clase CondVert - Metodo 5") 
 
    # Definicion de metodo 6
-    def mCondVert_6(self):
+    def limpiar_entrada(self):
         print("Clase CondVert - Metodo 6") 
 
 class CondominioHorizontal:
    # Definicion de contructor de inicializacion
     def __init__ (self, arg1, arg2, arg3, arg4, arg5):
-        self.a1 = arg1
-        self.a2 = arg2
-        self.a3 = arg3
-        self.a3 = arg4
-        self.a3 = arg5
+        self.plaza = arg1
+        self.piscina = arg2
+        self.estacionamiento = arg3
+        self.helipuerto = arg4
+        self.muelle = arg5
 
-   # Definicion de metodo 1
-    def mCondHoriz_1(self):
+   # Definicion de metodo 1  POLIFORMICO!!!
+    def construir_casa(self):
         print("Clase CondHoriz - Metodo 1") 
 
    # Definicion de metodo 2
-    def mCondHoriz_2(self):
+    def limpiar_plaza(self):
         print("Clase CondHoriz - Metodo 2") 
 
    # Definicion de metodo 3
-    def mCondHoriz_3(self):
+    def limpiar_piscina(self):
         print("Clase CondHoriz - Metodo 3") 
 
    # Definicion de metodo 4
-    def mCondHoriz_4(self):
+    def limpiar_estacionamiento(self):
         print("Clase CondHoriz - Metodo 5") 
 
    # Definicion de metodo 5
-    def mCondHoriz_5(self):
+    def limpiar_helipuerto(self):
         print("Clase CondHoriz - Metodo 5") 
 
    # Definicion de metodo 6
-    def mCondHoriz_6(self):
+    def limpiar_muelle(self):
         print("Clase CondHoriz - Metodo 6") 
 
