@@ -2,13 +2,13 @@ from .condominio import condominio
 
 class Terreno:
    # Definicion de contructor de inicializacion
-    def __init__ (self, arg1, arg2, arg3, arg4, arg5, arg6):
-        self.superficie = arg1
-        self.tierra = arg2
-        self.piedras = arg3
-        self.arboles = arg4
-        self.pasto = arg5
-        self.grama = arg6
+    def __init__ (self, superficie, tierra, piedras, arboles, pasto, grama):
+        self.superficie = superficie
+        self.tierra = tierra
+        self.piedras = piedras
+        self.arboles = arboles
+        self.pasto = pasto
+        self.grama = grama
 
    # Definicion de metodo 1
     def construir_casa(self):

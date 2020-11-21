@@ -3,10 +3,10 @@ from .condominio import condominio
 # Definicion de Clase
 class Guardia:
    # Definicion de contructor de inicializacion
-    def __init__ (self, arg1, arg2, arg3):
-        self.Uniforme = arg1
-        self.Herramientas = arg2
-        self.a3 = arg3
+    def __init__ (self, Uniforme, Herramientas, corpulencia):
+        self.Uniforme = Uniforme
+        self.Herramientas = Herramientas
+        self.corpulencia = corpulencia
 
    # Definicion de metodo 1
     def patrullaje(self):
