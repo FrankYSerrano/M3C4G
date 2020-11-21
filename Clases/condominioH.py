@@ -1,21 +1,27 @@
 from .condominio import condominio
 from .terreno import Terreno
 
+'''
+    condominio.__init__(direccion, lista_administrador, lista_guardias, 
+                        num_unidades_habitacionales, lista_unidades, cuenta_corriente)
+    Terreno.__init__(superficie, tierra, piedras, arboles, pasto, grama)
+'''
+
 class CondominioHorizontal (condominio, Terreno):
    # Definicion de contructor de inicializacion
     def __init__(self, plaza, piscina, estacionamiento, helipuerto, muelle,
-                direccion, lista_administrador, lista_guardias, num_unidades_habitacionales, lista_unidades, cuenta_corriente,
-                superficie, tierra, piedras, arboles, pasto, grama):
-        condominio.__init__(direccion, lista_administrador, lista_guardias, num_unidades_habitacionales, lista_unidades, cuenta_corriente)
-        Terreno.__init__(superficie, tierra, piedras, arboles, pasto, grama)
+                direccion, lista_administrador, lista_guardias, num_unidades_habitacionales,
+                lista_unidades, cuenta_corriente,
+                terr):
+#                superficie, tierra, piedras, arboles, pasto, grama):        
         self.plaza = plaza
         self.piscina = piscina
         self.estacionamiento = estacionamiento
         self.helipuerto = helipuerto
         self.muelle = muelle
-
+        condominio.__init__(self, direccion, lista_administrador, lista_guardias, num_unidades_habitacionales, lista_unidades, cuenta_corriente)
+        Terreno.__init__(self, terr.superficie, terr.tierra, terr.piedras, terr.arboles, terr.pasto, terr.grama)
         print("Cree instancia de clase CondominioHorizontal")
-
 
    # Definicion de metodo 1  POLIFORMICO!!!
     def construir_casa(self):
