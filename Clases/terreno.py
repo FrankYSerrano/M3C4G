@@ -10,6 +10,8 @@ class Terreno:
         self.pasto = pasto
         self.grama = grama
 
+        print("Cree instancia de clase Terreno")
+
    # Definicion de metodo 1
     def construir_casa(self):
         print("Clase Terreno - Metodo 1") 

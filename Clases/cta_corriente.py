@@ -6,6 +6,8 @@ class CuentaCorriente:
         self.saldo = saldo
         self.giro = giro
 
+        print("Cree instancia de clase CuentaCorriente")
+
    # Definicion de metodo 1
     def girar(self):
         print("Clase CtaCorr - Metodo 1") 
