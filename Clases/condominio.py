@@ -1,55 +1,62 @@
 class  condominio:
-    def__init__(self, direccion, lista_administrador, lista_guardias, num_unidades_habitacionales,
-                lista_unidades, cuenta_corriente)
-             self.direccion = direccion
-             self.lista_administrador = lista_administrador
-             self.lista_guardias = lista_guardias
-             self.num_unidades_habitacionales = num_unidades_habitacionales
-             self.lista_unidades = lista_unidades
-             self.cuenta_corriente = cuenta_corriente
+    def __init__(self, direccion, lista_administrador, lista_guardias, num_unidades_habitacionales,
+                lista_unidades, cuenta_corriente):
+            self.direccion = direccion
+            self.lista_administrador = lista_administrador
+            self.lista_guardias = lista_guardias
+            self.num_unidades_habitacionales = num_unidades_habitacionales
+            self.lista_unidades = lista_unidades
+            self.cuenta_corriente = cuenta_corriente
 
-    def get_direccion(self, get_direccion):
-        self.get_direccion = get_direccion 
-        return self.get_direccion
-        
-    def set_direccion(self, set_direccion):
-        self.get_direccion
-        return self.get_direccion
+    @property
+    def get_direccion(self, direccion):
+        self.direccion = direccion 
+        return self.direccion
 
-    def set_administrador(self,set_administrador):
-        self.set_administrador
-        return self.set_administrador
-             
-    def get_administrador(self, get_administrador):
-        self.get_administrador = get_administrador
-          return self.get_administrador     
-     
-    def add_guardia(self, add_guardia):
-         self.add_guardia = add_guardia
-         return self.add_guardia   
+#    @direccion.setter
+    def set_direccion(self, direccion):
+        print("Aqui muestro el setter")
+        self.direccion = direccion
 
-    def del_guardia(self, del_guardia):
-         self.del_guardia = del_guardia 
-         return self.del_guardia
+    @property
+    def get_administrador(self, administrador):
+        self.administrador = administrador
+        return self.administrador
 
-    def  get_guardias(self, get_guardias):
-         return self.get_guardias   
+#    @administrador.setter
+    def set_administrador(self,administrador):
+        self.administrador = administrador
+ 
+    def add_guardia(self, guardia):
+        self.lista_guardias.append(guardia)
+        return self.lista_guardias   
 
-    def get_unidades(self, get_unidades):
-          self.get_unidades = get_unidades
-              return self.get_unidades                 
+    def del_guardia(self, guardia):
+        self.lista_guardias.pop(guardia) 
+        return self.lista_guardias
 
+    @property
+    def get_guardias(self, lista_guardias):
+        return self.lista_guardias   
+
+    @property
+    def get_unidades(self, lista_unidades):
+        self.lista_unidades = lista_unidades
+        return self.lista_unidades                 
+
+    def metodo1(self):
+        print("Metodo 1")
+
+    def metodo2(self):
+        print("Metodo 2")
+
+    def metodo3(self):
+        print("Metodo 3")
+
+    def metodo4(self):
+        print("Metodo 4")
 
 # get_direccion, set_direccion, set_administrador,
 # get_administrador, add_guardia, del_guardia, get_guardias,
 # get_unidades
 # Agregue 4 métodos adicionales que usted considere apropiados
-    
-       
-
-
-
-
-
-
-    
