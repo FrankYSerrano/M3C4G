@@ -1,16 +1,19 @@
 from .condominio import condominio
 from .terreno import Terreno
 
-class CondominoVertical (condominio, Terreno):
+class CondominioVertical (condominio, Terreno):
    # Definicion de contructor de inicializacion
-    def __init__ (self, num_de_pisos, num_de_ascensores, escaleras, entrada, color):
+    def __init__ (self, num_de_pisos, num_de_ascensores, escaleras, entrada, color,direccion, lista_administrador, 
+                 lista_guardias, num_unidades_habitacionales, lista_unidades, cuenta_corriente, 
+                 terr):
         self.num_de_pisos = num_de_pisos
         self.num_de_ascensores = num_de_ascensores
         self.escaleras = escaleras
         self.entrada = entrada
         self.color = color
-
-        print("Cree instancia de clase CondominoVertical")
+        condominio.__init__(self, direccion, lista_administrador, lista_guardias, num_unidades_habitacionales, lista_unidades, cuenta_corriente)
+        Terreno.__init__(self, terr.superficie, terr.tierra, terr.piedras, terr.arboles, terr.pasto, terr.grama)
+        print("Cree instancia de clase CondominoVertical ", self.direccion)
 
 
    # Definicion de metodo 1 POLIFORMICO!!!
