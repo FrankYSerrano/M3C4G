@@ -10,6 +10,8 @@ class  condominio:
             self.lista_unidades = lista_unidades
             self.cuenta_corriente = cuenta_corriente
 
+            print("Cree instancia de clase condominio")
+
     @property
     def get_direccion(self, direccion):
         self.direccion = direccion 

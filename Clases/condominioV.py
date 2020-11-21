@@ -10,6 +10,9 @@ class CondominoVertical (condominio, Terreno):
         self.entrada = entrada
         self.color = color
 
+        print("Cree instancia de clase CondominoVertical")
+
+
    # Definicion de metodo 1 POLIFORMICO!!!
     def construir_edificio(self):
         print("Clase CondVert - Metodo 1") 

@@ -8,6 +8,8 @@ class Guardia:
         self.Herramientas = Herramientas
         self.corpulencia = corpulencia
 
+        print("Cree instancia de clase Guardia")
+
    # Definicion de metodo 1
     def patrullaje(self):
         print("Clase Guardia - Metodo 1") 
