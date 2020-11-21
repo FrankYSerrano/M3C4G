@@ -35,5 +35,3 @@ class CondominioHorizontal (condominio, Terreno):
     def limpiar_muelle(self):
         print("Clase CondHoriz - Metodo 6") 
 
-ed1 = CondominioHorizontal(True, False, True, False, False)
-print(dir(ed1))

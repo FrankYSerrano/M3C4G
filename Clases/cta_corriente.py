@@ -1,10 +1,10 @@
 from .condominio import condominio
 class CuentaCorriente:
    # Definicion de contructor de inicializacion
-    def __init__ (self, arg1, arg2, arg3):
-        self.estado_cuenta = arg1
-        self.saldo = arg2
-        self.giro = arg3
+    def __init__ (self, estado_cuenta, saldo, giro):
+        self.estado_cuenta = estado_cuenta
+        self.saldo = saldo
+        self.giro = giro
 
    # Definicion de metodo 1
     def girar(self):

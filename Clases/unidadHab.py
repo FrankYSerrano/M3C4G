@@ -1,10 +1,10 @@
 from .condominio import condominio
 class UnidadHabitacional:
    # Definicion de contructor de inicializacion
-    def __init__ (self, arg1, arg2, arg3):
-        self.puerta = arg1
-        self.ventanas = arg2
-        self.techo = arg3
+    def __init__ (self, puerta, ventanas, techo):
+        self.puerta = puerta
+        self.ventanas = ventanas
+        self.techo = techo
 
    # Definicion de metodo 1
     def abrir_puerta(self):
